@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEAM 5 - MEDCARE</title>
+  <!--Tailwind CSS-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body class="bg-gray-50">
+
+  <!-- Sticky Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <!-- Left side: Logo + Links -->
+        <div class="flex-shrink-0">
+          <span class="text-blue-600 font-bold text-xl">🏥 MedCare</span>
+        </div>
+          <!-- Desktop Links -->
+          <div class="hidden md:flex flex-1 justify-center space-x-8">
+            <a href="#" class="text-black-700 hover:text-blue-600 font-medium">Home</a>
+            <a href="#about-us" class="text-black-700 hover:text-blue-600 font-medium">About Us</a>
+            <a href="#services" class="text-black-700 hover:text-blue-600 font-medium">Services</a>
+            <a href="#contact" class="text-black-700 hover:text-blue-600 font-medium">Contact</a>
+          </div>
+
+        <!-- CTA Button (Desktop) -->
+        <button class="hidden md:flex">
+          <a href="book.html"
+            class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition duration-300">
+            Book Now
+          </a>
+        </button>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+      <a href="#" class="block text-black-700 hover:text-blue-600 font-medium">Home</a>
+      <a href="#about-us" class="block text-black-700 hover:text-blue-600 font-medium">About Us</a>
+      <a href="#services" class="block text-black-700 hover:text-blue-600 font-medium">Services</a>
+      <a href="#contact" class="block text-black-700 hover:text-blue-600 font-medium">Contact</a>
+      <a href="book.html"
+        class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition duration-300">
+        Book Now
+      </a>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="bg-blue-50 min-h-screen flex items-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center w-full">
+
+      <!-- Left Text Content -->
+      <div class="w-full md:w-1/2 text-center md:text-left transition-all duration-500" data-aos="fade-up">
+        <h1 class="text-4xl sm:text-5xl font-bold text-gray-800 leading-tight mb-6">
+          Your Health, <span class="text-blue-600">Our Priority</span></span>
+        </h1>
+        <p class="text-lg text-gray-600 mb-8">
+          Trusted care from top professionals. Book appointments, connect with specialists, and get the treatment you
+          deserve — fast, easy, and reliable.
+        </p>
+        <div class="flex flex-col sm:flex-row sm:justify-start justify-center gap-4">
+          <a href="book.html"
+            class="px-6 py-3 text-white bg-blue-600 hover:bg-blue-700 font-semibold rounded-lg shadow transition duration-300">
+            Book Now
+          </a>
+          <a href="#services"
+            class="px-6 py-3 text-blue-600 border border-blue-600 hover:bg-blue-100 font-semibold rounded-lg transition duration-300">
+            Explore Services
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="w-full md:w-1/2 mb-12 md:mb-0 flex justify-center">
+        <img src="Doctors (1).gif" alt="medical_team" class="rounded-full bg-blue-50 shadow-lg max-h-auto w-auto">
+      </div>
+
+    </div>
+  </section>
+
+     <!-- About us -->
+      <section id="about-us">
+        <div class="about-us">
+        <h1>About <span>MedCare</span></h1>   
+        <div class="story">   
+          <h2>Our Story</h2>
+          <p>
+            MedCare was established with the sole aim of providing adequate
+            Healthcare services to individuals.
+            Before we took off in the year 2020, our team of researchers carried 
+            out a researchon the numerous challenges individuals face in the course 
+            of assessing quality healthcare and also issues faced by the healthcare
+            providers in the process of carrying out their duties. 
+          </p>
+        </div>
+
+        <div class="achievements">
+          <h2> Achievements </h2>
+          <p>
+            It's been 5 years since MedCare was founded and we've been
+            able to situate branches in geographical locations deprived of the timely use 
+            of health services to achieve the best possible health outcome.
+            The world is revolving and Technology has made numerous impact in several 
+            sectors, the Health Sector is not left out. At MedCare, we are well 
+            equipped with world-class Technological apparatus/equipments in order
+            provide accurate services and empower our Healthcare Specialists.
+          </p>
+        </div> 
+
+          <h2>Our Mission and Values</h2>
+          <p>
+            Our primary mission is to provide quality, accessible and affordable healthcare 
+            to all and sundry. We are patient-centered and strive to maintain ethical standards
+            by being accountable for actions and outcomes.
+          </p>
+
+        <div class="our-team">
+          <h2>Meet Our Team</h2>
+           <p>
+            The MedCare Team comprises of professionals from all aspects
+            of Medical care, from General Practice to Psychiatry amongst others.
+           </p>
+           <h3>Meet Med<span>Care's</span> Top Healthcare Specialists </h3>
+           <div class="our-doctors">
+            <img src="./assets/images/doctor-001 (2).jpg" alt="Our-Team">
+            <img src="./assets/images/doctor-002.jpg" alt="Our-Team">
+            <img src="./assets/images/doctor-003.jpg" alt="Our-Team">
+            <img src="./assets/images/doctor-004.jpg" alt="Our-Team">
+            <img src="./assets/images/doctor-005.jpg" alt="Our-Team">
+           </div>
+        </div>
+      </div>
+      </section>
+
+    <!-- Services Section -->
+<section id="services" class="py-16 px-4 bg-blue-50">
+    <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+      <p class="text-gray-600 mb-12">Comprehensive healthcare tailored to your needs</p>
+  
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Service 1 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300">
+          <div class="text-blue-600 text-3xl mb-4">🩺</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">General Consultation</h3>
+          <p class="text-gray-600">Access to experienced general practitioners for thorough medical advice and evaluations.</p>
+        </div>
+  
+        <!-- Service 2 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300">
+          <div class="text-blue-600 text-3xl mb-4">💊</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Pharmaceutical Services</h3>
+          <p class="text-gray-600">Get quality prescriptions and medication guidance directly from licensed pharmacists.</p>
+        </div>
+  
+        <!-- Service 3 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300">
+          <div class="text-blue-600 text-3xl mb-4">🧠</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Mental Health Support</h3>
+          <p class="text-gray-600">Talk to certified psychiatrists and therapists in a safe, compassionate environment.</p>
+        </div>
+  
+        <!-- Service 4 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300">
+          <div class="text-blue-600 text-3xl mb-4">🩻</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Diagnostics & Imaging</h3>
+          <p class="text-gray-600">Advanced lab tests and imaging services to support accurate diagnoses and treatments.</p>
+        </div>
+  
+        <!-- Service 5 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300">
+          <div class="text-blue-600 text-3xl mb-4">👩‍⚕️</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Specialist Referrals</h3>
+          <p class="text-gray-600">Connect with top-tier medical specialists across various fields for expert care.</p>
+        </div>
+  
+        <!-- Service 6 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300">
+          <div class="text-blue-600 text-3xl mb-4">🏥</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Emergency Care</h3>
+          <p class="text-gray-600">24/7 emergency support to ensure you receive immediate attention during critical times.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-4 bg-blue-50">
+    <div class="max-w-lg mx-auto">
+      <h2 class="text-3xl font-semibold text-center mb-6 fade-in">Contact Us</h2>
+      <form id="contact-form" class="space-y-4 bg-white p-6 rounded shadow fade-in delay-1">
+        <input type="text" id="name" placeholder="Your Name" class="w-full px-4 py-2 border rounded " required />
+        <input type="email" id="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded" required />
+        <textarea id="message" placeholder="Your Message" class="w-full px-4 py-2 border rounded" required></textarea>
+        <button type="submit"
+          class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-700 transition">Submit</button>
+        <p id="form-msg" class="text-center text-sm mt-2"></p>
+      </form>
+    </div>
+  </section>
+
+  <!--Footer Section-->
+
+  <footer>
+
+    
+    <div class="footer-container">
+
+     
+
+      <div class="partA">
+
+        <div class="overlay"></div>
+        <h3>
+          Your health is our top priority. Talk to one of our medical specialists today at no cost. We're here to guide you every step of the way.
+
+        </h3>
+        <button>
+        <a href="book.html">get a free consultation now</a>  
+        </button>
+      </div>
+
+      <div class="partB">
+
+        <div class="overlay"></div>
+        <div class="physical-address">
+          <p>
+            <h2>Visit Us</h2> <br>
+            123 Healing Street <br>
+            Wellness City, 900101 <br>
+            Phone: +234 800 123 4567 <br>
+            Email: contact@medcarehospital.com
+          </p>
+        </div>
+
+        
+        <div class="site-map">
+          <h2>Site Map</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="Newsletter">
+          <h2>
+            Sign Up for Updates
+          </h2>
+          <p>
+            Stay updated with expert health tips, hospital news, and exclusive wellness content straight to your inbox.
+          </p>
+          
+            <input id="Email" type="email" placeholder="Enter your email" class="signup">
+            <button type="submit" class="signup-button">Sign Up</button>
+        
+        </div> 
+      </div>
+
+      <div class="bottom">
+        <div>
+          Copyright &copy; 2025 Med
+          care Hospital. All rights reserved.
+        </div>
+  
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./index.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: false, //whether or not it animates only once
+      mirror: true   
+    });
+  </script>
+
+</body>
+
+</html>

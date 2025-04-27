@@ -1,0 +1,279 @@
+  /* About us section */
+  .about-us {
+    background-color: #eff6ff;
+    width: 100%;
+  }
+
+  .about-us h1 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  div.story {
+    margin-top: 0.8rem;
+  } 
+
+  .about-us h2 {
+    font-size: 1.5rem;
+    font-weight: 450;
+    margin-inline: 1.5rem;
+    margin-top: 0.9rem;
+  }
+
+  .about-us h1 span {
+    color: #2563EB;
+  }
+
+  .about-us p {
+    font-size: 1.1rem;
+    margin-inline: 1.5rem;
+    line-height: 1.3rem;
+  }
+
+  .our-team h3 {
+    font-size: 1.6rem; 
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    padding-top: 0.6rem;
+  }
+
+  .our-team span {
+    color: #2563EB;
+  }
+
+.our-doctors {
+  display: flex;
+  padding: 1rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 1rem; 
+}
+
+.our-doctors::-webkit-scrollbar {
+  display: none;
+}
+
+  .our-doctors img {
+    flex: 0 0 auto;  /* prevents shrinking or wrapping */
+    border-radius: 0.6rem;
+    width: 25%;
+    margin-block: 0.2rem;
+  }
+
+  .our-doctors img:hover {
+    border: 1px solid #eff6ff;
+  }
+
+  @media screen and (max-width: 768px) {
+    .our-doctors {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .our-doctors img {
+      width: 80%;
+      height: auto; 
+      border-radius: 0.6rem;
+    }
+    .footer-container .partB{
+      display: block;
+    }
+
+    .footer-container .partB div{
+      margin: 0 auto;
+      align-items: center;
+    }
+    .bottom{
+      font-size:10px;
+      align-items: center;
+
+    }
+  }
+
+  .about-us, h3 {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideUp 5s ease forwards;
+     animation-delay: 0s; 
+  }
+   
+   @keyframes fadeSlideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  } 
+
+  .our-doctors {
+      animation: slideLeft 1s ease forwards;
+      animation-delay: 1s;
+    }
+    
+    @keyframes slideLeft {
+      0% {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    
+.footer-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+   
+
+    .partA{
+      text-align: center;
+      padding: 50px;
+      margin-bottom: 0px;
+      background-color: rgb(4, 4, 65);
+      color: white;
+      border-bottom: 1px;
+      border-style: dotted;
+      border-left: 1px;
+      border-color: yellowgreen;
+  
+     /* background-image: url('../assets/images/team2.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 200px;
+      position: relative;
+      z-index: 2;*/
+    }
+
+   /* .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index:1;
+      background-color: rgba(0, 0, 0, 0.7);
+      
+    }*/
+
+    .partA button{
+      background-color: blue;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 10px;
+      padding: 10px 15px;
+      margin-top: 20px;
+      border-radius: 8px;
+      
+    }
+
+    .partA button:hover{
+      background: none;
+      border-style: solid;
+      border-color:white;
+      border-width: 1px;
+    }
+    .partB{
+      display: flex;
+      padding: 40px 20px;
+      justify-content: space-around;
+      background-color: rgb(4, 4, 65);
+      color: white;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+      
+    }
+
+    .partB div{
+      margin: 50px;
+      margin-top: 0;
+      padding: 20px 30px;
+
+    }
+
+
+    .partB h2{
+      font-size: 16px;
+      color: rgb(9, 238, 21);
+      text-decoration: underline;
+      text-decoration-color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .Newsletter{
+      flex: 2;
+      padding: 0;
+    }
+    
+
+    .signup{
+       padding: 8px 15px;
+       margin-top: 20px;
+       background-color: rgba(0, 0, 0, 0.3);
+    }
+    .signup-button{
+      padding: 8px 15px;
+      background-color: rgb(241, 186, 3);
+      margin-left: -5px;
+      border-radius: 2px;
+      text-transform: uppercase;
+    }
+
+    .signup-button:hover{
+     background-color: rgb(175, 74, 7);
+    }
+
+
+    .bottom{
+      border-top: 1px;
+      border-style: solid;
+      border-color: rgb(224, 214, 119);
+      background-color: rgb(7, 7, 119);
+      display: flex;
+      justify-content: space-around;
+      color: rgb(245, 244, 243);
+    }
+    .social-icons a{
+      margin: 5px;
+      font-size: 20px;
+    }
+
+
+    /* Custom CSS for additional styling */
+    body {
+        background-color: #f0f7ff; /* Light blue background to match MedCare theme */
+        font-family: 'Arial', sans-serif;
+    }
+    .header-logo {
+        font-weight: bold;
+        color: #1e40af; /* Blue to match the theme */
+    }
+    .form-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .success-message {
+        display: none;
+        color: #10b981;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .error-message {
+        display: none;
+        color: #ef4444;
+        text-align: center;
+        margin-top: 1rem;
+    }
